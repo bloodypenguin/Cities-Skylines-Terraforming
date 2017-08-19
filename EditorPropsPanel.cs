@@ -12,12 +12,21 @@ namespace MoreBeautification
 
         public string[] m_editorCategories;
 
+        private UIPanel m_OptionsBrushPanel;
+
         public void CreateAssetItem(PrefabInfo info)
         {
             ReflectionUtils.InvokeInstanceMethod(m_CreateAssetItem, this, info);
         }
 
         public override ItemClass.Service service => ItemClass.Service.None;
+
+        protected override void Start()
+        {
+            if ((UnityEngine.Object)this.m_OptionsBar != (UnityEngine.Object)null && (UnityEngine.Object)this.m_OptionsBrushPanel == (UnityEngine.Object)null)
+                this.m_OptionsBrushPanel = this.m_OptionsBar.Find<UIPanel>("BrushPanel");
+            base.Start();
+        }
 
         protected override void OnButtonClicked(UIComponent comp)
         {
@@ -32,6 +41,15 @@ namespace MoreBeautification
             {
                 propTool.m_prefab = propInfo;
             }
+            if ((UnityEngine.Object)this.m_OptionsBrushPanel != (UnityEngine.Object)null)
+                this.m_OptionsBrushPanel.Show();
+        }
+
+        protected override void OnHideOptionBars()
+        {
+            if (!((UnityEngine.Object)this.m_OptionsBrushPanel != (UnityEngine.Object)null))
+                return;
+            this.m_OptionsBrushPanel.Hide();
         }
 
         public override void RefreshPanel()
