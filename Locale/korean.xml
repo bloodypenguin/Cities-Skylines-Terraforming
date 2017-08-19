@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="utf-8"?>
-<Language UniqueName="kr" ReadableName="한국어(Korean)" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+<Language UniqueName="ko" ReadableName="한국어(Korean)" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
   <Translations>
     <Translation ID="MB_DESCRIPTION" String="게임에서 소품(prop) 배치를 활성화시킵니다." />
     <!-- PANELS -->
