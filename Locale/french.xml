@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Language UniqueName="fr" ReadableName="Français [French]" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+  <Translations>
+    <Translation ID="MB_DESCRIPTION" String="Active le placement des accessoires dans le jeu." />
+    <!-- PANELS -->
+    <Translation ID="MB_PANEL_UNSORTED" String="Non trié" />
+    <Translation ID="MB_PANEL_TILES" String="Tuiles de sol" />
+    <Translation ID="MB_PANEL_LIGHTS" String="Lumière" />
+    <Translation ID="MB_PANEL_COMMON" String="Commun" />
+    <Translation ID="MB_PANEL_PARKS" String="Parcs" />
+    <Translation ID="MB_PANEL_INDUSTRIAL" String="Insdustriel" />
+    <Translation ID="MB_PANEL_BILLBOARDS" String="Panneau d'affichage" />
+    <Translation ID="MB_PANEL_SPECIAL_BILLBOARDS" String="Panneau d'affichage spécial" />
+    <Translation ID="MB_PANEL_RESIDENTIAL" String="Résidentiel" />
+  </Translations>
+</Language>
